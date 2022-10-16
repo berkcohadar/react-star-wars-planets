@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Header from "./components/Header";
+import Body from "./components/Body";
+import axios from "axios";
 
-function App() {
+import "./styles/styles.scss";
+
+export default function App() {
+  const [searchResults, setSearchResults] = useState(null);
+  const [keyword, setKeyword] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  async function getPlanets(key) {
+    setLoading(true);
+    const url = "https://swapi.dev/api/planets?search="+key;
+    axios
+      .get(url)
+      .then((response) => {
+        setSearchResults(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }
+
+  useEffect(() => {
+    getPlanets(keyword);
+  }, [keyword]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <Header setKeyword={setKeyword} />
+        {!loading && <Body searchResults={searchResults}/>}
+      </div>
   );
 }
-
-export default App;

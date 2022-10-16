@@ -1,0 +1,26 @@
+.sw-search-bar{
+    width: 100%;
+    height: 100%;
+    background: $color-secondary;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+
+    input {
+        color: $color-text;
+        background-color: transparent;
+        width: 100%;
+        height: 35px;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        padding: 0 10px;
+    }
+    
+    &:focus-within{
+        border: 1px solid $color-contrast;
+        .sw-search-bar-icon{
+            color: $color-contrast;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.sw-header-logo {
+    font-size: 24px;
+
+    img {
+        margin-left: 20px;
+        height: 80px;
+        @media (max-width:768px) {
+            margin-left: 0px;
+            height: 60px;
+        }
+    }
+}

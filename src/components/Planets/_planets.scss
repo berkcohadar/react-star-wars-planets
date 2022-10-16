@@ -1,0 +1,32 @@
+.sw-planets-area{
+    all: unset;
+    display: grid;
+    grid-gap: 40px 30px;
+    grid-template-columns: repeat(4, 1fr);
+
+    h1 {
+        font-size: 26px;
+        border-bottom: 1px solid $color-contrast;
+        padding: 0 10px;
+    }
+    h3 {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+
+    @media (max-width:1400px) { // XXL
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width:1200px) { // XL
+        grid-gap: 20px 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width:768px) { // M
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

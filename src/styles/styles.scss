@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+@import '../components/Header/header';
+@import '../components/Header/SearchBar/search';
+@import '../components/Header/Logo/logo';
+@import '../components/Body/body';
+@import '../components/Planets/planet';
+@import '../components/Planets/planets';
+
+* {
+    margin: 0;
+    font-family: 'Star Jedi', arial;
+    letter-spacing: 2px;
+}
+
+.App {
+    min-height: 100vh;
+    background-color: $color-secondary;
+}
+
+a {
+    all: unset;
+}
