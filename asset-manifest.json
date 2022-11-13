@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-star-wars-planets/static/css/main.96b689b0.css",
+    "main.css": "/react-star-wars-planets/static/css/main.eeb33eb5.css",
     "main.js": "/react-star-wars-planets/static/js/main.70c90b5f.js",
     "index.html": "/react-star-wars-planets/index.html",
-    "main.96b689b0.css.map": "/react-star-wars-planets/static/css/main.96b689b0.css.map",
+    "main.eeb33eb5.css.map": "/react-star-wars-planets/static/css/main.eeb33eb5.css.map",
     "main.70c90b5f.js.map": "/react-star-wars-planets/static/js/main.70c90b5f.js.map"
   },
   "entrypoints": [
-    "static/css/main.96b689b0.css",
+    "static/css/main.eeb33eb5.css",
     "static/js/main.70c90b5f.js"
   ]
 }
