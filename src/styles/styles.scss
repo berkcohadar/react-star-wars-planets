@@ -16,6 +16,10 @@
 .App {
     min-height: 100vh;
     background-color: $color-secondary;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 a {

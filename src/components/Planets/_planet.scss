@@ -2,7 +2,8 @@
     height: 200px;
     overflow-x: auto;
     border-radius: 12px;
-    background-color: $color-primary;
+    background-color: rgba($color-primary, 0.9);
+    box-shadow: 0 2px 8px $color-primary;
     color: $color-text;
     padding: 20px;
     border: 1px solid transparent;

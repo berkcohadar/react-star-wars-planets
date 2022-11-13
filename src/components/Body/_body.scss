@@ -1,5 +1,8 @@
 .sw-body{
     padding: 20px 40px;
+    min-height: calc(100vh - 140px);
+    background: rgba($color-primary,0.35);
+    
     @media (max-width:1200px) {
         padding: 20px;
     }

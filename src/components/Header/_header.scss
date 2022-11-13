@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
-    background-color: $color-primary;
+    background: linear-gradient(to bottom,rgba($color-primary,1), rgba($color-primary,0.75), rgba($color-primary,0.35));
     color: $color-text;
 
     div {

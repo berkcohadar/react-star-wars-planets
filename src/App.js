@@ -31,9 +31,11 @@ export default function App() {
   }, [keyword]);
 
   return (
-      <div className="App">
-        <Header setKeyword={setKeyword} />
-        {!loading && <Body searchResults={searchResults}/>}
+      <div
+        className="App"
+        style={{backgroundImage:"url(https://images.unsplash.com/photo-1533613220915-609f661a6fe1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80)"}} >
+          <Header setKeyword={setKeyword} />
+          {!loading && <Body searchResults={searchResults}/>}
       </div>
   );
 }
